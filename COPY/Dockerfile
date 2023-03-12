@@ -6,4 +6,4 @@ CMD ["nginx","-g","daemon 0ff;"]
 LABEL AUTHOUR="raju"
 EXPOSE 8080/tcp
 ENV NAME=nginx
-COPY hote;-html-template /usr/share/nginx/html
+COPY hote-html-template /usr/share/nginx/html
