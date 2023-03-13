@@ -1,6 +1,7 @@
 FROM ubuntu
-RUN apt-get update -y && apt-get install -y apache2
+RUN apt-get update -y && apt-get install -y nginx
 RUN rm -rf /usr/share/nginx/html/index.html
-COPY qw /var/www/html/
-CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND"]
+RUN echo "daemon off;" >>/etc/nginx/nginx.conf
+COPY qw /usr/share/nginx/html
+CMD ["nginx", "-g", "daemon off;"]
 EXPOSE 80/tcp
