@@ -1,4 +1,4 @@
 FROM almalinux
-RUN adduser raju
-USER raju
-RUN touch /usr/games/raju.txt
+RUN adduser nginx
+USER nginx
+RUN touch /tmp/hello.txt
