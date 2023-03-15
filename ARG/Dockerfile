@@ -1,3 +1,3 @@
 ARG VERSION
 FROM almalinux:${VERSION:-8}
-RUN echo VERISON
+RUN echo ${VERISON:-8}
