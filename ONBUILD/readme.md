@@ -7,4 +7,4 @@ FROM almalinux
 ONBUILD ADD simple.txt /tem  ->
                                when we build this image the container doest add txt" file in container 
                              -> 
-                               the other hand users excute this dockerfile the file will be added in the tem/ directory  
+                               the other hand users excute this dockerfile the file will be added in the tem/ directory 
